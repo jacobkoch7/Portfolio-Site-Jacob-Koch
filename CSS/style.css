@@ -1,1 +1,19 @@
-body{background-color:  #1E1E1C;}
+/*
+Colors used:
+Primary Color (Black): #1E1E1C;
+Secondary Color (White): #FEFFFE;
+Secondary Color (Green): #42D669;
+Secondary Color (Orange): #FF863E;
+Secondary Color (Blue):  #00DAD3;
+*/
+
+body{
+    background-color:  #1E1E1C;
+    color:#FEFFFE ;
+}
+
+
+h1{color: #42D669;}
+
+body{font-family: 'Brisbane',sans-serif;
+}
