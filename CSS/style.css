@@ -33,10 +33,12 @@ h2 {
   }
 
 h3 {
+    color: #FEFFFE;
     font-size: 1.75em;
-    font-weight: 400;
+    font-weight: 700;
   }
   h4 {
+    color: #FEFFFE;
     font-size: 1.35em;
     font-weight: 400;
   }
@@ -90,7 +92,7 @@ h3 {
   .button.contact {
     background-color: transparent;
     color: #42D669;
-    text-transform: uppercase;
+    text-transform: unppercase;
     border: 2px solid #373737;
   }
 
