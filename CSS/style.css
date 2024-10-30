@@ -44,19 +44,19 @@ h3 {
   }
 
   a {
-    color: #FF863E;
+    color: #42D669;
     text-decoration: none; /* No underlining */
     font-size: 20px;
     font-weight: bold;
   }
  
   a:hover {
-    color:  #FF863E;
+    color:  #42D669;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
   a:visited { /* visited link */
-    color: #FF863E;
+    color: #42D669;
   }
   
   a:active { /* selected link */
@@ -71,7 +71,7 @@ h3 {
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #373737;
-    color: #FF863E; /* needed to override the default link color */
+    color: #42D669; /* needed to override the default link color */
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
@@ -81,7 +81,7 @@ h3 {
     opacity: 1.0; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
     background-color: #2c2c2c;
-    color: #FF863E;
+    color: #42D669;
   }
 
   .nav{
@@ -103,14 +103,10 @@ h3 {
 
   .project{
     width: 100%;
-  }
-
-  img {
-    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
   }
+
 
   .socialmedia{
     width: 100px;
@@ -125,3 +121,11 @@ h3 {
 li{
     margin-bottom: 20px;
   }
+
+.aboutme h2{
+color: #FEFFFE;
+}
+
+.biopicture{
+width: 600px;
+}
