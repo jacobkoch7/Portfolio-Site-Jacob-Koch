@@ -8,7 +8,7 @@ Secondary Color (Blue):  #00DAD3;
 */
 
 body{
-    background-color:  #1E1E1C;
+    background-color:  #202020;
     color:#FEFFFE ;
     font-family: 'Neue Haas Grotesk',sans-serif;
     font-size: 16px;
@@ -44,23 +44,25 @@ h3 {
   }
 
   a {
-    color: #42D669;
+    color: #ff863e;
     text-decoration: none; /* No underlining */
     font-size: 20px;
     font-weight: bold;
   }
  
   a:hover {
-    color:  #42D669;
+    color:  #FF863E;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
   a:visited { /* visited link */
-    color: #42D669;
+    color: #FF863E;
+    font-size: 20px;
   }
   
   a:active { /* selected link */
     color: #FF863E;
+    font-size: 20px;
   }
 
   a:hover,a:focus {
@@ -86,13 +88,11 @@ h3 {
 
   .nav{
     padding-right: 30px;
-
   }
 
   .button.contact {
     background-color: transparent;
     color: #42D669;
-    text-transform: unppercase;
     border: 2px solid #373737;
   }
 
@@ -127,5 +127,9 @@ color: #FEFFFE;
 }
 
 .biopicture{
-width: 600px;
+width: 300px;
+}
+
+.phone{
+  color: #42D669; 
 }
