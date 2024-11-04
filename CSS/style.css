@@ -191,9 +191,13 @@ width: 300px;
 }
 
 .marquee:hover .marquee-content {
-  animation-direction: reverse; 
-  .ux{color: #42D669}
+  animation-direction: reverse;
 }
+
+.marquee:hover .ux {
+  color: #42D669;
+}
+
 
 .row:nth-child(1) {
   animation: scroll-row 8s linear infinite; 
