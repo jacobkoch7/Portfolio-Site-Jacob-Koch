@@ -104,6 +104,7 @@ h4 {
     background-color: transparent;
     color: #42D669;
     border: 2px solid #FEFFFE;
+    font-size: 16pt;
 }
 
 .nav{
@@ -180,7 +181,7 @@ width: 300px;
 .marquee-content {
   display: flex;
   flex-direction: column; 
-  animation: scroll 8s linear infinite; 
+  animation: scroll 5s linear infinite; 
 
 }
 
@@ -280,12 +281,14 @@ width: 300px;
 
 .header{
   padding-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .hello h1{
   margin-top: 25px;
   text-align: left;
   margin-left: 25px;
+  box-sizing: border-box;
 }
 
 .hello p{
@@ -294,18 +297,22 @@ width: 300px;
   margin-right: 25px;
   margin-top: -5px;
   display: inline-block;
+  box-sizing: border-box;
 }
 
 .ux{
   margin-right: 20px;
+  box-sizing: border-box;
 }
 
 .name{
   margin-right: 20px;
+  box-sizing: border-box;
 }
 
 .row{
   margin-bottom: -15px;
+  box-sizing: border-box;
 }
 
 .nav{
@@ -313,18 +320,21 @@ width: 300px;
     margin-right: 15px;
     text-align: center;
     display: block;
+    box-sizing: border-box;
 }
 
 .mywork{
   text-align: center;
   margin-bottom: -20px ;
   padding: 1px 0;
+  box-sizing: border-box;
 }
 
 .project1 {
   display: flex;
   align-items: flex-start;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .project1::after {
@@ -335,6 +345,7 @@ width: 300px;
   width: 100%;
   height: 40px; 
   z-index: -1;
+  box-sizing: border-box;
 }
 
 .project-image {
@@ -345,6 +356,7 @@ width: 300px;
   border-radius: 8px;
   margin-right: 25px;
   margin-left: 5px;
+  box-sizing: border-box;
 }
 
 .project-content {
@@ -354,11 +366,13 @@ width: 300px;
   flex-grow: 1; 
   margin-left: 20px;
   margin-right: 25px;
+  box-sizing: border-box;
 }
 
 .hello {
   margin-top: 25px;
-  margin-bottom: 0; 
+  margin-bottom: 0;
+  box-sizing: border-box;
 }
 
 .text-content h3,
@@ -367,11 +381,13 @@ width: 300px;
   margin-left: 10px;
   margin-top: 15px; 
   display: inline-block;
+  box-sizing: border-box;
+  margin-right: 25px;
 }
 
 .text-content .button {
-  width: 110px; 
-  height: 20px; 
+  width: 140px; 
+  height: 35px; 
   margin-top: auto; 
   margin-left: 10px; 
   margin-bottom: 20px; 
@@ -382,33 +398,41 @@ width: 300px;
   justify-content: center; 
   align-items: center;
   position: absolute;
+  box-sizing: border-box;
 }
 
 .text-content p {
   margin-top: -1px;
   font-size: 2vw;
+  box-sizing: border-box;
 }
 
 .text-content h3{
   font-size: 3vw;
   margin-bottom: 1px;
+  box-sizing: border-box;
 }
 
 .email{
 margin-top: -15px;
 margin-left: 25px;
+margin-right: 25px;
+box-sizing: border-box;
 }
 
 .button.contact{
   padding: 5pt;
+  box-sizing: border-box;
 }
 
 .socialmedia{
   margin-left: 25px;
+  box-sizing: border-box;
 }
 
 .copyright{
   margin-left: 25px;
+  box-sizing: border-box;
 }
 
 .aboutme-container {
@@ -417,12 +441,14 @@ margin-left: 25px;
   align-items: flex-start;
   gap: 25px;
   margin: 25px;
+  box-sizing: border-box;
 }
 
 .biopicture {
   width: 37%; 
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(66, 66, 66, 0.3); 
+  box-sizing: border-box;
 }
 
 .aboutme {
@@ -430,12 +456,14 @@ margin-left: 25px;
   flex-direction: column; 
   justify-content: flex-start;
   flex-grow: 1;
+  box-sizing: border-box;
 }
 
 .aboutme .title h1 {
   margin-top: -10px;
   margin-bottom: -10px;
   margin-left: 10px;
+  box-sizing: border-box;
 }
 
 .aboutme .bio p {
@@ -443,11 +471,13 @@ margin-left: 25px;
   margin-left: 10px;
   margin-right: 25px;
   margin-top: 10px;
+  box-sizing: border-box;
 }
 
 .skills h2 {
   margin-top: -5px;
   margin-left: 10px;
+  box-sizing: border-box;
 }
 
 .skills ul {
@@ -455,11 +485,12 @@ margin-left: 25px;
   margin-left: 35px;
   margin-top: -2vw;
   line-height: 4vw;
+  box-sizing: border-box;
 }
 
 .aboutme .skills .list ul li {
-
   margin-bottom: 5px;
+  box-sizing: border-box;
 }
 
 .aboutme .button.contact {
@@ -473,32 +504,39 @@ margin-left: 25px;
   text-align: center;
   white-space: nowrap;
   width: fit-content; 
+  box-sizing: border-box;
+  margin-top: 5px;
 }
 
 .projectheader{
   margin-top: 50px;
   margin-left: -20px;
+  box-sizing: border-box;
 }
 
 .projectinfo{
   margin-left: 25px;
+  box-sizing: border-box;
 }
 
 .projectinfo p{
   margin-top: -20px;
   margin-bottom: 30px;
   margin-right: 25px;
+  box-sizing: border-box;
 }
 
 .projectinfo ul{
   margin-top: -10px;
   margin-bottom: 25px;
   margin-right: 25px;
+  box-sizing: border-box;
 }
 
 .project{
   width: 100%;
   display: flex;
+  box-sizing: border-box;
 }
 
 .projecttext P{
@@ -506,17 +544,20 @@ margin-left: 25px;
   margin-left: 25px;
   margin-right: 25px;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .projecttext h3{
-  margin-left: 25px;
+margin-left: 25px;
 margin-top: 20px;
+box-sizing: border-box;
 }
 
 @media (min-width: 600px) { 
   .aboutme .button.contact {
     font-size: calc(2vw + 0.25vw); 
-    padding: 10px 20px; 
+    padding: 10px 20px;
+    box-sizing: border-box; 
 }
 }
 
@@ -524,7 +565,8 @@ margin-top: 20px;
 @media (max-width: 600px) { 
   .project-image {
     width: 300px;
-    margin-right: 10px;  
+    margin-right: 10px;
+    box-sizing: border-box;
   }
 }
 
