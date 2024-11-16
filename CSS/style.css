@@ -18,7 +18,7 @@ header{
   position: relative;
   max-width: 100%;
   top: 0;
-  height: 170px;
+  height: 140px;
 }
 
 h1, h2, h3, h4 {
@@ -52,8 +52,9 @@ h4 {
 
   a {
     color: #ff863e;
+    font-family: 'Neue Haas Grotesk',sans-serif;
     text-decoration: none; 
-    font-size: 2vw;
+    font-size: 10pt;
     font-weight: bold;
 }
  
@@ -64,7 +65,7 @@ h4 {
 
   a:visited { 
     color: #FF863E;
-    font-size: 2vw;
+    font-size: 10pt;
 }
   
   a:active { 
@@ -77,20 +78,22 @@ h4 {
 }
 
 .button {
-    display: inline-block; 
+    display: inline-block;
+    font-family: 'Neue Haas Grotesk',sans-serif; 
     background-color: #373737;
     color: #FEFFFE; 
     font-weight: bold;
     padding: 1vw;
     border-radius: 5px;
     cursor: pointer;
+    transition: color 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
 }
 
 .button:hover {
-    opacity: 1.0; 
     text-decoration: none;
     background-color: #2c2c2c;
     color: #42D669;
+    transform: scale(1.1);
 }
 
 .parent-container {
@@ -101,14 +104,17 @@ h4 {
 
 .button.contact {
     background-color: transparent;
+    font-family: 'Neue Haas Grotesk',sans-serif;
     color: #42D669;
     border: 2px solid #FEFFFE;
     font-size: 16pt;
+    transition: color 0.5s ease, transform 0.5s ease;
 }
 
 .nav{
-    font-size: medium;
+    font-size: 10pt;
     font-weight: bolder;
+    transition-duration: 1s;
 }
 
 nav > ul {
@@ -127,6 +133,7 @@ nav > ul > li {
 .button.contact:hover {
     background-color: transparent;
     color: #FEFFFE;
+    transform: scale(1.1);
 }
 
   .project{
@@ -155,7 +162,7 @@ color: #FEFFFE;
 }
 
 .biopicture{
-width: 300px;
+width: 250px;
 }
 
 
@@ -172,7 +179,7 @@ width: 300px;
 }
 
 .marquee {
-  height: 120px; 
+  height: 80px; 
   position: relative;
   overflow: hidden;
 }
@@ -193,14 +200,17 @@ width: 300px;
 
 .name {
   color: #FEFFFE;
-  font-size: 45px; 
+  font-size: 25px; 
   font-weight: 700;
+  line-height: 40px;
 }
 
 .ux {
   color: #FF863E;
-  font-size: 45px; 
+  font-size: 25px; 
   font-weight: 700;
+  line-height: 40px;
+  transition: color 0.2s ease;
 }
 
 @keyframes scroll {
@@ -235,18 +245,18 @@ width: 300px;
 }
 
 .hello h1 {
-  font-size: 1.9em;
+  font-size: 20pt;
   color: #FEFFFE;
   line-height: 1.0;
 }
 
 .hello p {
   text-align: center;
-  font-size: 15pt;
+  font-size: 12pt;
 }
 
-.mywork {
-  font-size: 1.9em;
+.mywork h2{
+  font-size: 24pt;
   background-color: hsl(0, 0%, 6%);
 }
 
@@ -260,24 +270,27 @@ width: 300px;
 }
 
 .aboutme .title h1 {
-  font-size: 3vw;
+  font-size: 24pt;
   color: #FF863E;
 }
 
 .aboutme .bio p {
-  font-size: 2vw;
+  font-size: 12pt;
 }
 
 .skills h2{
-  font-size: 2.5vw;
+  font-size: 20pt;
+  color: #FF863E;
 }
 
 .skills ul {
- font-size: 2.3vw;
+ font-size: 12pt;
+ column-count: 2;
+    column-gap: 20px;
 }
 
 .projectheader{
-  width: 95%;
+  width: 90%;
 }
 
 /* Layout styling */
@@ -287,22 +300,34 @@ width: 300px;
 }
 
 .header{
-  padding-bottom: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.hello{
+  text-align: center; /* Center text horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -60px;
 }
 
 .hello h1{
   margin-top: 25px;
-  text-align: left;
   margin-left: 25px;
+  display: block;
+
 }
 
 .hello p{
-  text-align: left;
   margin-left: 25px;
   margin-right: 25px;
   margin-top: -5px;
-  display: inline-block;
+  margin-bottom: -10px;
+  display: block;
 }
+
 
 .ux{
   margin-right: 20px;
@@ -323,16 +348,24 @@ width: 300px;
     display: block;
 }
 
-.mywork{
+.mywork h2{
   text-align: center;
-  margin-bottom: -20px ;
-  padding: 1px 0;
+  margin-bottom: -30px ;
+  padding: 15px 0;
 }
 
 .project1 {
   display: flex;
-  align-items: flex-start;
-  padding-bottom: 40px;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center;
+  padding-bottom: 50px;
+  position: relative; 
+  background-color: hsl(0, 0%, 6%);
+  margin-top: 10px;
+}
+
+.exploration{
+  margin-top: -20px;
 }
 
 .project1::after {
@@ -345,44 +378,45 @@ width: 300px;
   z-index: -1;
 }
 
+.enaao {
+  margin-top: -10px; /* Adjusts the space above .enaao */
+  margin-bottom: 20px;
+  background-color: hsl(0, 0%, 6%);
+  padding-bottom: 40px;
+}
+
+
 .project-image {
-  width: 600px; 
+  width: 95%; 
   height: auto; 
-  margin-top: 20px; 
+  margin: 20px auto 0; /* Centers the image horizontally */
   object-fit: cover;
   border-radius: 8px;
-  margin-right: 25px;
-  margin-left: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .project-content {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: space-between;
   flex-grow: 1; 
-  margin-left: 20px;
-  margin-right: 25px;
+  margin: 20px 0 0 0;
 }
 
 .hello {
-  margin-top: 25px;
   margin-bottom: 0;
 }
 
 .text-content h3,
 .text-content p {
   margin: 10px; 
-  margin-left: 10px;
   margin-top: 15px; 
   display: inline-block;
-  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .text-content .button {
-  width: 140px; 
+  width: 120px; 
   height: 40px; 
-  margin-top: 10px; 
-  margin-left: 10px; 
+  margin-left: 25px; 
   margin-bottom: 20px; 
   border-radius: 5px;
   cursor: pointer;
@@ -391,22 +425,27 @@ width: 300px;
   justify-content: center; 
   align-items: center;
   position: absolute;
+  font-size: 15pt;
 }
 
 .text-content p {
   margin-top: -1px;
-  font-size: 2vw;
+  font-size: 12pt;
 }
 
-.text-content h3{
-  font-size: 3vw;
+.text-content h3 {
+  font-size: 20pt;
   margin-bottom: 1px;
 }
 
 .email{
-margin-top: -15px;
+margin-top: 100px;
 margin-left: 25px;
 margin-right: 25px;
+}
+
+.email h2{
+  margin-top: 15px;
 }
 
 .button.contact{
@@ -415,6 +454,7 @@ margin-right: 25px;
 
 .socialmedia{
   margin-left: 25px;
+  margin-top: 20px;
 }
 
 .copyright{
@@ -423,16 +463,15 @@ margin-right: 25px;
 
 .aboutme-container {
   display: flex; 
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column; /* Default to column for smaller screens */
+  align-items: center;
   gap: 25px;
   margin: 25px;
 }
 
 .biopicture {
-  width: 37%; 
+  width: 90%; 
   border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(66, 66, 66, 0.3); 
 }
 
 .aboutme {
@@ -445,26 +484,26 @@ margin-right: 25px;
 .aboutme .title h1 {
   margin-top: -10px;
   margin-bottom: -10px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .aboutme .bio p {
   margin-bottom: 15px;
-  margin-left: 10px;
   margin-right: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-left: 15px;
 }
 
 .skills h2 {
-  margin-top: -5px;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 .skills ul {
   padding-left: 0;
-  margin-left: 35px;
-  margin-top: -2vw;
-  line-height: 4vw;
+  margin-top: -10px;
+  margin-left: 25px;
+  line-height: 30px;
 }
 
 .aboutme .skills .list ul li {
@@ -472,25 +511,27 @@ margin-right: 25px;
 }
 
 .aboutme .button.contact {
-  font-size: 20px;
-  padding: 1vw;
+  font-size: 24px;
+  padding: 5px;
   text-decoration: none;
   border-radius: 5px;
   display: block;
-  margin: 15px auto 0;
-  margin-top: -10px;
+  margin: 5px auto; 
   text-align: center;
   white-space: nowrap;
-  width: fit-content; 
-  margin-top: 5px;
+  width: fit-content;
+  margin-top: 50px;
 }
 
 .projectheader img{
   margin-top: 25px;
+  align-items: center;
+  display: flex;
 }
 
 .projectinfo{
   margin-left: 25px;
+  margin-top: 25px;
 }
 
 .projectinfo p{
@@ -522,18 +563,355 @@ margin-left: 25px;
 margin-top: 20px;
 }
 
-@media (min-width: 600px) { 
+.berlin-illustration{
+  width: 250%;
+max-width: 250%;
+height: auto;
+margin-left: 25px;
+}
+
+.svganimate{
+  margin-top: -20px;
+}
+
+.text-content-svg{
+  margin-left: 300px;
+  margin-right: 25px;
+}
+
+.text-content-svg p{
+  margin-top: -10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  .name{
+    font-size: 30pt;
+    line-height: 50px;
+  }
+
+  .ux{
+    font-size: 30pt;
+    line-height: 50px;
+  }
+
+  .marquee {
+    height: 120px; 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header{
+    height: 160px;
+  }
+  
+  .nav{
+    margin-top: -15px;
+    font-size: 12pt;
+  }
+
+  .mywork h2{
+    font-size: 24pt;
+  }
+
+  .hello{
+    margin-left: 50px;
+    margin-right: 50pt;
+  }
+
+  .hello h1{
+    font-size: 24pt;
+  }
+
+  .hello p{
+    font-size: 12pt;
+  }
+
+  .skills h2{
+    font-size: 26pt;
+  }
+
+  .skills ul{
+    font-size: 14pt;
+  }
+
+  .aboutme .title h1{
+    font-size: 26pt;
+  }
+
+  .aboutme .bio p{
+    font-size: 14pt;
+  }
+
+  .project-content{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+
+  .project-content{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+
+  .project1{
+    flex-direction: row; /* Switches to side-by-side layout */
+    align-items: flex-start;
+  }
+
+  .project-image{
+    width: 400px;
+    margin-left: 25px;
+  }
+
+  .text-content{
+    margin-top: 15px;
+    margin-right: 25px;
+  }
+
+  .text-content p{
+    font-size: 14pt;
+    margin-bottom: 20px;
+  }
+
+  .text-content h3{
+    font-size: 24pt;
+    margin-bottom: 20px;
+  }
+
+  .text-content .button{
+    margin-left: 20px;
+    width: 130px;
+  }
+
+  .projectheader{
+    width: 80%;
+    margin-left: -5px;
+  }
+
+  .projectinfo h2{
+    font-size: 26pt;
+  }
+
+  .projectinfo p{
+    font-size: 14pt;
+  }
+
+  .projectinfo ul{
+    font-size: 14pt;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .text-content .button {
+    width: 120px;
+    white-space: nowrap;
+  }
+
+  .text-content h3{
+    font-size: 26pt;
+  }
+
+  .text-content p{
+    font-size: 16pt;
+  }
+
+  .text-content .button {
+    width: 160px; 
+    height: 40px; 
+    margin-left: 10px; 
+    margin-bottom: 20px; 
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: absolute;
+    font-size: 20pt;
+    margin-top: 15px;
+  }
+
+  .name{
+    font-size: 45pt;
+    line-height: 60px;
+  }
+
+  .ux{
+    font-size: 45pt;
+    line-height: 60px;
+  }
+
+  .marquee {
+    height: 150px; 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header{
+    height: 200px;
+  }
+  
+  .nav{
+    margin-top: -10px;
+    font-size: 15pt;
+  }
+
+  .mywork h2{
+    font-size: 28pt;
+  }
+
+  .hello{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: -40px;
+  }
+
+  .hello p{
+    font-size: 16pt;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .hello h1{
+    font-size: 28pt;
+  }
+
+  .email h1{
+    font-size: 24px;
+  }
+
+  .email p{
+    font-size: 16pt;
+  }
+
+  .aboutme-container {
+    flex-direction: row; /* Side-by-side layout for large screens */
+    align-items: flex-start;
+  }
+
+  .biopicture {
+    width: 40%; /* Adjust width for large screens */
+    margin-left: 0; /* Reset margin for side-by-side layout */
+  }
+
+  .skills h2{
+    font-size: 24pt;
+  }
+
+  .skills ul{
+    font-size: 18pt;
+    column-count: 2;
+    column-gap: 20px;
+    font-family: neue haas grotesk;
+  }
+
+  .aboutme .title h1{
+    font-size: 32pt;
+  }
+
+  .aboutme .bio p{
+    font-size: 18pt;
+  }
+
   .aboutme .button.contact {
-    font-size: calc(2vw + 0.25vw); 
-    padding: 10px 20px;
-}
-}
+    margin-top: 100px;
+    margin: 20px 0 20px 0;
+    align-items: normal;
+  }
 
+  .project-content{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+  }
 
-@media (max-width: 600px) { 
-  .project-image {
-    width: 300px;
-    margin-right: 10px;
+  .project1{
+    flex-direction: row; /* Switches to side-by-side layout */
+    align-items: flex-start;
+  }
+
+  .project-image{
+    width: 500px;
+    margin-left: 25px;
+  }
+
+  .text-content{
+    margin-top: 15px;
+  }
+
+  .text-content p{
+    font-size: 16pt;
+    margin-bottom: 20px;
+  }
+
+  .text-content h3{
+    font-size: 32pt;
+    margin-bottom: 20px;
+  }
+
+  .text-content .button{
+    margin-left: 20px;
+  }
+
+  .projectheader{
+    width: 80%;
+    margin-left: -25px;
+  }
+
+  .projectinfo{
+    margin-left: 25px;
+  }
+
+  .projectinfo h2{
+    font-size: 32pt;
+  }
+
+  .projectinfo p{
+    font-size: 16pt;
+  }
+
+  .projectinfo ul{
+    font-size: 16pt;
   }
 }
 
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back{
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
