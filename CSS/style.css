@@ -1,6 +1,6 @@
 
 body{
-    background-color:  hsl(0, 0%, 8%);
+    background-color:  hsl(0, 0%, 6%);
     color:#FEFFFE ;
     font-family: 'Neue Haas Grotesk',sans-serif;
     font-size: 16px;
@@ -48,6 +48,10 @@ h4 {
     color: #FEFFFE;
     font-size: 1.35em;
     font-weight: 400;
+}
+
+.svg-text h3{
+  font-size: 24pt;
 }
 
   a {
@@ -109,6 +113,7 @@ h4 {
     border: 2px solid #FEFFFE;
     font-size: 16pt;
     transition: color 0.5s ease, transform 0.5s ease;
+    
 }
 
 .nav{
@@ -257,7 +262,6 @@ width: 250px;
 
 .mywork h2{
   font-size: 24pt;
-  background-color: hsl(0, 0%, 6%);
 }
 
 .project1 {
@@ -305,7 +309,7 @@ width: 250px;
 }
 
 .hello{
-  text-align: center; /* Center text horizontally */
+  text-align: center; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,6 +321,7 @@ width: 250px;
   margin-top: 25px;
   margin-left: 25px;
   display: block;
+  margin-right: 25px;
 
 }
 
@@ -356,16 +361,12 @@ width: 250px;
 
 .project1 {
   display: flex;
-  flex-direction: column; /* Stacks elements vertically */
+  flex-direction: column; 
   align-items: center;
   padding-bottom: 50px;
   position: relative; 
   background-color: hsl(0, 0%, 6%);
   margin-top: 10px;
-}
-
-.exploration{
-  margin-top: -20px;
 }
 
 .project1::after {
@@ -379,17 +380,15 @@ width: 250px;
 }
 
 .enaao {
-  margin-top: -10px; /* Adjusts the space above .enaao */
+  margin-top: -10px; 
   margin-bottom: 20px;
-  background-color: hsl(0, 0%, 6%);
   padding-bottom: 40px;
 }
 
-
 .project-image {
-  width: 95%; 
+  width: 90%; 
   height: auto; 
-  margin: 20px auto 0; /* Centers the image horizontally */
+  margin: 20px auto 0; 
   object-fit: cover;
   border-radius: 8px;
   display: flex;
@@ -405,41 +404,37 @@ width: 250px;
   margin-bottom: 0;
 }
 
-.text-content h3,
-.text-content p {
-  margin: 10px; 
-  margin-top: 15px; 
-  display: inline-block;
-  margin-left: 25px;
-}
-
-.text-content .button {
-  width: 120px; 
-  height: 40px; 
-  margin-left: 25px; 
-  margin-bottom: 20px; 
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  position: absolute;
-  font-size: 15pt;
-}
-
-.text-content p {
-  margin-top: -1px;
-  font-size: 12pt;
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: -20px;
 }
 
 .text-content h3 {
-  font-size: 20pt;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+}
+
+.text-content p {
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: -5px;
+}
+
+.button {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #373737;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-left: 25px;
 }
 
 .email{
-margin-top: 100px;
+margin-top: 25px;
 margin-left: 25px;
 margin-right: 25px;
 }
@@ -450,6 +445,7 @@ margin-right: 25px;
 
 .button.contact{
   padding: 5pt;
+  margin-left: -5px;
 }
 
 .socialmedia{
@@ -463,7 +459,7 @@ margin-right: 25px;
 
 .aboutme-container {
   display: flex; 
-  flex-direction: column; /* Default to column for smaller screens */
+  flex-direction: column; 
   align-items: center;
   gap: 25px;
   margin: 25px;
@@ -546,9 +542,16 @@ margin-right: 25px;
   margin-right: 25px;
 }
 
-.project{
-  width: 100%;
-  display: flex;
+.project {
+  display: grid;
+  grid-template-columns: 1fr; /* Default single column for mobile */
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .project {
+    grid-template-columns: 1fr; /* Single column */
+  }
 }
 
 .projecttext P{
@@ -563,24 +566,31 @@ margin-left: 25px;
 margin-top: 20px;
 }
 
-.berlin-illustration{
-  width: 250%;
-max-width: 250%;
-height: auto;
-margin-left: 25px;
+.art{
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-.svganimate{
+.animation{
   margin-top: -20px;
 }
 
-.text-content-svg{
-  margin-left: 300px;
-  margin-right: 25px;
+.svg-text{
+  margin-left: 25px;
 }
 
-.text-content-svg p{
-  margin-top: -10px;
+.svg-text p{
+  margin-top: -20px;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px; 
+  display: grid;
+  gap: 20px;
+  min-width: 100px;
 }
 
 /* ==============================
@@ -658,35 +668,65 @@ Medium devices (640px and larger)
   }
 
   .project1{
-    flex-direction: row; /* Switches to side-by-side layout */
+    flex-direction: row; 
     align-items: flex-start;
   }
 
   .project-image{
-    width: 400px;
-    margin-left: 25px;
+    width: 350px;
+    margin-left: 12px;
   }
 
-  .text-content{
-    margin-top: 15px;
-    margin-right: 25px;
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project1 {
+    display: flex;
+    flex-direction: row; /* Keeps the layout horizontal */
+    align-items: flex-start;
+    gap: 20px; /* Adjusts the space between image and text */
+    width: 100%; /* Full width to allow resizing */
+  }
+  
+  .project-image {
+    width: 100%; /* Controls the size of the image */
+    max-width: 500px; /* Ensures the image doesn’t grow too large */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%; /* Controls the width of the text */
+    max-width: 500px; /* Prevents text from becoming too wide */
+    padding-right: 20px; /* Keeps the text a bit away from the edge */
+    height: auto;
   }
 
-  .text-content p{
+  .text-content p {
     font-size: 14pt;
     margin-bottom: 20px;
   }
-
-  .text-content h3{
+  
+  .text-content h3 {
     font-size: 24pt;
     margin-bottom: 20px;
   }
-
-  .text-content .button{
+  
+  .text-content .button {
     margin-left: 20px;
-    width: 130px;
+    width: 110px;
   }
 
+  #enaao{
+    margin-top: 1px;
+  }
+  
   .projectheader{
     width: 80%;
     margin-left: -5px;
@@ -702,6 +742,25 @@ Medium devices (640px and larger)
 
   .projectinfo ul{
     font-size: 14pt;
+  }
+
+  .art{
+    width: 500px;
+    max-width: 100%;
+    margin-left: 5px;
+    height: auto;
+  }
+
+  .svg-text{
+    margin-left: 25px;
+    margin-top: -15px;
+  }
+
+  .svg-text p{
+    margin-top: -15px;
+  }
+  .project {
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
   }
 
 }
@@ -729,17 +788,18 @@ Large devices (1024px or larger)
     margin-left: 10px; 
     margin-bottom: 20px; 
     border-radius: 5px;
-
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex; 
     justify-content: center; 
     align-items: center;
-    position: absolute;
     font-size: 20pt;
-    margin-top: 15px;
   }
 
+  #enaao {
+    margin-top: -25px;
+  }
+  
   .name{
     font-size: 45pt;
     line-height: 60px;
@@ -794,13 +854,13 @@ Large devices (1024px or larger)
   }
 
   .aboutme-container {
-    flex-direction: row; /* Side-by-side layout for large screens */
+    flex-direction: row; 
     align-items: flex-start;
   }
 
   .biopicture {
-    width: 40%; /* Adjust width for large screens */
-    margin-left: 0; /* Reset margin for side-by-side layout */
+    width: 40%; 
+    margin-left: 0; 
   }
 
   .skills h2{
@@ -835,17 +895,25 @@ Large devices (1024px or larger)
   }
 
   .project1{
-    flex-direction: row; /* Switches to side-by-side layout */
+    flex-direction: row; 
     align-items: flex-start;
   }
 
-  .project-image{
-    width: 500px;
-    margin-left: 25px;
-  }
+    .project-image-container {
+      max-width: 800px; /* Increase the max width for larger screens */
+      margin-top: 60px;
+    }
+  
+    .project-image {
+      width: 90%; /* Optionally, slightly reduce width to add padding */
+      max-width: 1000px; /* Allow for larger images */
+      margin-left: -25px;
+
+    }
 
   .text-content{
     margin-top: 15px;
+    margin-left: -65px;
   }
 
   .text-content p{
@@ -882,36 +950,94 @@ Large devices (1024px or larger)
   .projectinfo ul{
     font-size: 16pt;
   }
+
+  .art{
+    width: 105%; /* Optionally, slightly reduce width to add padding */
+      max-width: 1000px; /* Allow for larger images */
+      margin-left: -25px;
+  }
+
+  .svg-text{
+    margin-left: 175px;
+  }
+
+  .svg-text h3{
+    font-size: 32pt;
+  }
+
+  .svg-text p{
+    font-size: 16pt;
+  }
+#enaao{
+  margin-top: 45px;
 }
 
-.sun {
-  animation: 4s color-change infinite alternate linear;
+#exploration{
+  margin-top: 25px;
+}
+.button#exploration {
+  margin-top: 30px;
 }
 
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+@media (min-width: 1025px) {
+    .project {
+      grid-template-columns: 60% 40%; /* 60/40 split for larger screens */
+    }
+  }
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.frames{
+  fill: url(#purpleToBlue);
 }
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+#purpleToBlue {
+  background: linear-gradient(to right, #6a4c8c, #4e6e8c);
 }
 
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+@keyframes gradientAnimation {
+  0% {
+    stop-color: #6a4c8c;
+  }
+  50% {
+    stop-color: #4e6e8c;
+  }
+  100% {
+    stop-color: #6a4c8c;
+  }
 }
 
-.cloud-back{
-  animation: 30s cloud-move infinite alternate linear;
+.frames stop {
+  animation: gradientAnimation 5s infinite alternate;
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+@keyframes scaleDownAndSlightMove {
+  0%, 100% {
+    transform: scale(0.5) translateY(0); /* Start and end at the original position */
+    opacity: 1; /* Fully visible */
+  }
+  50% {
+    transform: scale(1) translateY(20px); /* Scale up and move slightly down */
+    opacity: 1; /* Remain fully visible */
+  }
+}
+
+#circle1 {
+  animation: scaleDownAndSlightMove 4s ease-in-out infinite;
+  animation-delay: 0.5s; /* Start after a small delay */
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+#circle2 {
+  animation: scaleDownAndSlightMove 4s ease-in-out infinite;
+  animation-delay: 1s; /* Start slightly later */
+  transform-origin: center center;
+  transform-box: fill-box;
+}
+
+#circle3 {
+  animation: scaleDownAndSlightMove 4s ease-in-out infinite;
+  animation-delay: 1.5s; /* Start even later */
+  transform-origin: center center;
+  transform-box: fill-box;
 }
