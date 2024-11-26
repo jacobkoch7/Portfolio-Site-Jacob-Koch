@@ -560,6 +560,10 @@ Medium devices (640px and larger)
   margin-left: -50px;
 }
 
+.container.mywork{
+  margin-top: -50px;
+}
+
 .container.hello{
   margin-top: 50px;
   margin-left: -5px;
@@ -775,6 +779,7 @@ Large devices (1024px or larger)
 
   .container.mywork{
     margin-left: 45px;
+    margin-top: -50px;
   }
 
   [class*="col-"] {
