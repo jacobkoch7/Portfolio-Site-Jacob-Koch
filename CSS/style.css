@@ -80,7 +80,7 @@ h4 {
   text-decoration: underline;
 }
 
-.button {
+.button, button:visited {
     display: inline-block;
     font-family: 'Neue Haas Grotesk',sans-serif; 
     background-color: #373737;
@@ -91,6 +91,10 @@ h4 {
     border-radius: 5px;
     cursor: pointer;
     transition: color 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+}
+
+.button:visited{
+  color: #FEFFFE;
 }
 
 .button:hover {
@@ -134,6 +138,8 @@ nav > ul > li {
     color: #FEFFFE;
     transform: scale(1.1);
 }
+
+.button:visited
 
 .container.socialmedia{
     width: 150px;
@@ -386,54 +392,14 @@ img {
   margin-right: auto;
 }
 
-.container.exploration{
-  display: flex;
-  box-sizing: border-box;
-  justify-content: flex-start;
-}
-
-.image {
-  display: block;
-  box-sizing: border-box;
-  width: 160%;
-  max-width: 100%; 
-  height: auto;
-  position: relative; 
-  left: -25px;
-  margin-right: 25px; 
-}
-
-.container.project{
-  display: flex;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  margin-top: 10px;
-}
-
-.container.text-content{
-  margin-left: -15px; 
-  margin-right: 25px;
-}
-
-.container.text-content p{
-  margin-top: -20px;
-}
-
-
 .container.text-content .button {
   margin-bottom: 20px; 
   margin-top: -10px;
 }
 
-.art {
-  display: block; 
-  box-sizing: border-box;
-  width: 160%; 
-  max-width: 110%; 
+col-md-5{
+  width: 100%;
   height: auto;
-  position: relative; 
-  left: -25px; 
-  margin-right: 25px; 
 }
 
 .container.footer{
@@ -541,6 +507,18 @@ img {
   margin-top: 40px;
 }
 
+.project-image{
+  margin-left: 0px;
+  margin-top: 30px;
+}
+
+
+#medium-svg {
+  width: 90vw;
+  max-width: 300%;
+}
+
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -567,53 +545,6 @@ Medium devices (640px and larger)
     gap: 15px; 
   }
 
-.container img {
-  max-width: 77%;
-  height: auto;
-}
-
-.container.project {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: flex-start;
-  align-items: flex-start; 
-  gap: 5px; 
-  margin-top: -30px;
-  margin-left: 0px;
-}
-
-.container.text-content {
-  width: 60%; 
-  margin-left: -30px;
-  margin-right: 0px;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  margin-top: -10px; 
-}
-
-.container.text-content h3 {
-  margin-top: -15px; 
-  margin-bottom: 10px;
-  margin-left: -80px;
-  margin-right: -120px;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-size: 22pt;
-}
-
-.container.text-content p{
-  margin-left: -80px;
-  margin-right: -75px;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: flex-start;
-  font-size: 12pt;
-}
 
 .header {
   height: 150px;
@@ -646,49 +577,41 @@ Medium devices (640px and larger)
   font-size: 14pt;
 }
 
-.container.text-content .button {
-  margin-bottom: 20px;
-  margin-top: -10px;
-  text-align: left; 
-  margin-left: -75px;
-  padding: 6px;
+
+.container.projectrow {
+  margin-left: -20px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#medium-svg {
+  width: 60vw;
+  max-width: 300%;
+  margin-left: 20px;
 }
 
 
-.art {
-  width: 120% !important; 
+
+.col-md-5{
+  float: left;
+  max-width: 70%;
   height: auto;
-  max-width: 1000%; 
-  margin-top: -40px;
-  margin-left: -30px;
-}
-
-.container.image{
   margin-left: 0px;
-  margin-right: 20px;
-  margin-top: -30px;
-}
-
-.container.project1 {
-  display: flex; 
-  flex-direction: row;
-  align-items: flex-start; 
-  gap: 5px; 
-  margin-top: -30px; 
-  margin-left: 25px;
+  margin-right: 50px;
+  margin-top: 10px;
+  padding: 0 15px;
 }
 
 
-.container.text-content {
-  width: 70%;
-  margin-left: -30px;
-  margin-right: 0px;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: -10px; 
+.col-text-5 {
+  text-align: left;
+  margin-left: auto; 
+  margin-right: -75px;
+  max-width: 40%;
+  display: block;
 }
+
 
 .email{
   margin-left: -0px;
@@ -698,27 +621,6 @@ Medium devices (640px and larger)
   margin-top: -20px;
 }
 
-
-#svg-layout .text-content {
-  width: 41%; 
-  flex-shrink: 0; 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: -30px;
-  margin-left: -20px;
-}
-
-#svg-layout {
-  display: flex;
-  flex-direction: row; 
-  justify-content: flex-start; 
-  align-items: flex-start; 
-  gap: 40px;
-  width: 100%; 
-  max-width: 1400px;
-}
 
 .container.footer{
   margin-left: 0px;
@@ -736,16 +638,6 @@ Medium devices (640px and larger)
 
 .container.copyright{
   margin-left: -5px;
-  margin-top: -30px;
-}
-
-#svg-layout .text-content {
-  width: 50%; 
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   margin-top: -30px;
 }
 
@@ -865,43 +757,22 @@ Large devices (1024px or larger)
     margin-top: 100px;
   }
 
-  .container.text-content .button {
-    margin-bottom: 20px;
-    margin-top: -10px;
-    text-align: left;
-    margin-left: -80px;
-    padding: 7px;
-    margin-bottom: 50px;
-  }
-
-  .container.text-content {
-    width:100%; 
-    margin-left: -50px; 
-    margin-right: 0px;
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: flex-start;
-    margin-top: -10px; 
-  }
-
-  .art {
-    display: block;
-    box-sizing: border-box;
-    width: 160%; 
-    max-width: 60%; 
-    height: auto; 
-    left: -25px; 
-    margin-right: 25px; 
+  .name {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 10px; /* Optional gap between columns */
   }
   
-  .container.art {
-    width: 80% !important;
-    height: auto;
-    max-width: 1000%; 
-    margin-top: -40px;
-    margin-left: -30px;
+  .col-md-5 {
+    grid-column: span 1;
+    padding: 10px;
   }
+  
+  .col-text-5 {
+    grid-column: span 1;
+    padding: 10px;
+  }
+  
 
   .container.footer{
     margin-left: -70px;
@@ -1014,6 +885,18 @@ Large devices (1024px or larger)
     width: 150%;
     }
   
+
+  .col-text-5{
+    margin-top: 25px;
+  }
+
+  .col-text-5 h3{
+    font-size: 32pt;
+  }
+
+  .col-text-5 p{
+    font-size: 14pt;
+  }
 }
 
 /* Svg Animation */
