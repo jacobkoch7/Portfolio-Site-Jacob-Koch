@@ -776,6 +776,10 @@ Large devices (1024px or larger)
     font-size: 16pt;
   }
 
+  .container.mywork{
+    margin-left: 45px;
+  }
+
   [class*="col-"] {
     float: left;
     padding: 20px;
