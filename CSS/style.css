@@ -381,12 +381,9 @@ img {
 }
 
 .container.hello p{
-  margin-top: -20px;
+  margin-bottom:30px;
 }
 
-.container.mywork {
-  
-}
 
 .container.text-content .button {
   margin-bottom: 20px; 
