@@ -760,6 +760,10 @@ Large devices (1024px or larger)
     grid-template-columns: repeat(2, 1fr); /* Two equal columns */
     gap: 10px; /* Optional gap between columns */
   }
+
+  .nav {
+    font-size: 16pt;
+  }
   
   .col-lg-7{
     width: 60%;
