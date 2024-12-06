@@ -112,6 +112,21 @@ h4 {
     font-size: 16pt;
     transition: color 0.5s ease, transform 0.5s ease;
     
+}.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 .nav{
@@ -138,8 +153,6 @@ nav > ul > li {
     color: #FEFFFE;
     transform: scale(1.1);
 }
-
-.button:visited
 
 .container.socialmedia{
     width: 150px;
@@ -362,33 +375,87 @@ img {
   gap: 16px;
 }
 
+.nav{
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: -40px;
+}
+
+.icon{
+  margin-right: -30px;
+}
+
 .nav ul {
-  display: flex;
-  justify-content: center; 
-  gap: 20px; 
-  padding: 0;
-  margin: 0; 
-  list-style: none; 
-  margin-top: 5px;
+  display: flex; 
+  gap: 20px; /* Adjust space between items */
+  margin: 0;
+  padding: -30px;
+  list-style: none;
+  justify-content: flex-start; /* Align items to the left */
+  text-align: left; /* Ensure items align left */
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+.icon i {
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.container.mywork{
+  margin-left: 45px;
+}
+
+.navtoggle ul li:not(:first-child) {
+  display: none;
+}
+#myNavtoggle.active ul li {
+  display: block;
+}
+
+.navtoggle.ul{
+  width: 100%;
+}
+
+.nav a:hover{
+  text-decoration: none;
 }
 
 .container.hello{
   box-sizing: border-box;
   display: flex;
-  padding-top: 130px;
+  padding-top: 150px;
   justify-content: flex-start;
-  margin-left: var(--margin-left); 
 }
 
 .container.hello p{
   margin-bottom:30px;
+  margin-top: -10px;
 }
 
+.container.projectrow img {
+  margin-left: 5px;
+}
 
 .container.text-content .button {
   margin-bottom: 20px; 
   margin-top: -10px;
 }
+
+.container.mywork{
+  margin-left: 0px;
+}
+
 
 .col-md-6{
   width: 100%;
@@ -502,7 +569,7 @@ img {
 
 .project-image{
   margin-left: 0px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 
@@ -521,7 +588,7 @@ Medium devices (640px and larger)
     width: 90%;
     max-width: 1200px; 
     margin: 0 auto; 
-    padding: 20px;
+    padding: 25px;
   }
 
   .container .text-content {
@@ -538,7 +605,9 @@ Medium devices (640px and larger)
     gap: 15px; 
   }
 
-
+.icon{
+  margin-left: 5px;
+}
 .header {
   height: 150px;
 }
@@ -557,15 +626,18 @@ Medium devices (640px and larger)
 .container.mywork h2{
   font-size: 28pt;
   margin-bottom: -100px;
-  margin-left: -50px;
+  margin-left: 0px;
 }
 
 .container.mywork{
   margin-top: -50px;
 }
 
+.nav ul{
+  gap: 10px;
+}
 .container.hello{
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: -5px;
 }
 
@@ -579,7 +651,7 @@ Medium devices (640px and larger)
 
 
 .container.projectrow {
-  margin-left: -20px;
+  margin-left: -10px;
   content: "";
   display: table;
   clear: both;
@@ -621,7 +693,7 @@ Medium devices (640px and larger)
 
 
 .container.footer{
-  margin-left: 0px;
+  margin-left: -15px;
 }
 
 .button-container .button.contact {
@@ -762,11 +834,15 @@ Large devices (1024px or larger)
   }
 
   .nav {
-    font-size: 16pt;
+    font-size: 24pt;
   }
   
   .col-lg-7{
     width: 60%;
+  }
+
+  .icon i{
+    font-size: 32pt;
   }
 
   .col-lg-5 {
@@ -782,7 +858,7 @@ Large devices (1024px or larger)
   }
 
   .container.mywork{
-    margin-left: 45px;
+    margin-left: 0px;
     margin-top: -50px;
   }
 
@@ -793,7 +869,7 @@ Large devices (1024px or larger)
   }
 
   #medium-svg {
-    width: 55vw;
+    width: 53vw;
     max-width: 300%;
     margin-left: 0px;
   }
@@ -906,7 +982,7 @@ Large devices (1024px or larger)
 
   .container.projectheader{
     margin-top: 120px;
-    margin-left: -45px;
+    margin-left: -50px;
   }
 
   .container.projectinfo h2{
