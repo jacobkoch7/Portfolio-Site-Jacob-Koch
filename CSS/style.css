@@ -111,9 +111,6 @@ h4 {
     border: 2px solid #FEFFFE;
     font-size: 16pt;
     transition: color 0.5s ease, transform 0.5s ease;
-    
-}.navtoggle.responsive li  {
-  display: block;
 }
 
 .navtoggle.responsive nav {
@@ -125,7 +122,7 @@ h4 {
   border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:first-child  {
   padding: 0 0 10px;
 }
 
@@ -397,17 +394,9 @@ img {
   text-align: left; /* Ensure items align left */
 }
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
+nav > ul > li {
+  display: inline-block;
 }
 
 .icon i {
@@ -421,13 +410,11 @@ img {
 .navtoggle ul li:not(:first-child) {
   display: none;
 }
+
 #myNavtoggle.active ul li {
   display: block;
 }
 
-.navtoggle.ul{
-  width: 100%;
-}
 
 .nav a:hover{
   text-decoration: none;
@@ -457,7 +444,6 @@ img {
 .container.mywork{
   margin-left: 0px;
 }
-
 
 .col-md-6{
   width: 100%;
@@ -607,9 +593,6 @@ Medium devices (640px and larger)
     gap: 15px; 
   }
 
-.icon{
-  margin-left: 5px;
-}
 .header {
   height: 150px;
 }
@@ -635,9 +618,14 @@ Medium devices (640px and larger)
   margin-top: -50px;
 }
 
-.nav ul{
-  gap: 10px;
+.nav ul {
+  display: flex;
+  gap: 40px; /* Keeps spacing between items */
+  margin-left: -60px; /* Removes any external margins */
+  padding: 0; /* Ensures no internal padding that could offset centering */
+  width: 80%; /* Ensures it takes up the full width of its container */
 }
+
 .container.hello{
   margin-top: 20px;
   margin-left: -5px;
@@ -790,7 +778,22 @@ Medium devices (640px and larger)
 .container.projectinfo ul{
   margin-left: 0px;
 }
+
+
+#myNavtoggle li {
+  display: block;
 }
+
+.navtoggle li:first-child {
+  display: none;
+}
+
+.icon{
+  display: none;
+}
+
+}
+
 
 
 /* ==============================
@@ -924,7 +927,10 @@ Large devices (1024px or larger)
 
   .nav ul{
     gap: 100pt;
+    display: flex;
+    margin-left: -160px;
   }
+
 
   .container.aboutme {
     flex-direction: row; 
