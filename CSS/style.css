@@ -579,6 +579,11 @@ nav > ul > li {
   max-width: 300%;
 }
 
+#enaaoheader{
+  width: 100%;
+  margin-left: 10px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -703,6 +708,7 @@ Medium devices (640px and larger)
 
   .container.socialmedia {
     margin-top: -20px;
+    margin-left: 0px;
   }
 
   .container.copyright {
@@ -1021,6 +1027,10 @@ Large devices (1024px or larger)
     margin-top: -20px;
     width: 150%;
     margin-left: 15px;
+  }
+
+  #enaaoheader{
+    width: 70%;
   }
 }
 
