@@ -112,9 +112,12 @@ button:visited {
   background-color: transparent;
   font-family: "Neue Haas Grotesk", sans-serif;
   color: #42d669;
-  border: 2px solid #fefffe;
+  border: 2px solid #42d669;
   font-size: 16pt;
-  transition: color 0.5s ease, transform 0.5s ease;
+  padding: 10px 20px; /* Add padding for better spacing */
+  border-radius: 5px; /* Add subtle rounding for a modern look */
+  cursor: pointer; /* Make it clear it's clickable */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
 }
 
 .navtoggle.responsive nav {
@@ -153,6 +156,14 @@ nav > ul > li {
   background-color: transparent;
   color: #fefffe;
   transform: scale(1.1);
+}
+
+.button.contact:active {
+  transform: scale(0.95); /* Add a "pressing" effect on click */
+}
+
+.button:active {
+  transform: scale(0.95); /* Add a "pressing" effect on click */
 }
 
 .container.socialmedia {
@@ -831,9 +842,11 @@ Large devices (1024px or larger)
     font-size: 36pt;
   }
 
+
+
   .container.hello p,
   .container.text-content p {
-    font-size: 14pt;
+    font-size: 15pt;
   }
 
   .container.hello {
@@ -867,7 +880,7 @@ Large devices (1024px or larger)
   }
 
   .col-lg-5 p {
-    font-size: 16pt;
+    font-size: 15pt;
   }
 
   .container.mywork {
