@@ -27,6 +27,10 @@ h4 {
   font-family: "Neue Haas Grotesk", sans-serif;
 }
 
+#values {
+  margin-top: 25px;
+}
+
 h1 {
   color: #fefffe;
   font-size: 28pt;
@@ -48,7 +52,7 @@ h3 {
 h4 {
   color: #fefffe;
   font-size: 1.35em;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .svg-text h3 {
@@ -564,12 +568,17 @@ nav > ul > li {
   margin-top: 30px;
 }
 
+.container.projectinfo h4 {
+  margin-left: 0px;
+
+}
 .container.projectinfo p {
   margin-bottom: 40px;
 }
 
 .container.projectinfo ul {
   margin-bottom: 40px;
+  margin-left: 25px;
 }
 
 .container.project {
@@ -948,6 +957,7 @@ Large devices (1024px or larger)
     font-size: 18pt;
   }
 
+
   .nav ul {
     gap: 100pt;
     display: flex;
@@ -998,18 +1008,6 @@ Large devices (1024px or larger)
 
   .container.skills ul {
     font-size: 16pt;
-  }
-
-  #aboutme {
-    margin-left: 50px;
-    display: block;
-    text-align: left;
-    margin-top: -20px;
-    width: auto;
-    font-size: 24pt;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    white-space: nowrap;
   }
 
   .aboutme {
